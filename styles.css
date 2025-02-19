@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8e8e8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Responsive White Box */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Hover Effect: Container */
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image */
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff9a9e;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect: Profile Image */
+.profile-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Section */
+.header {
+    margin-top: 12px;
+}
+
+.header h2 {
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Social Media Icons Section */
+.social-icons {
+    margin-top: 15px;
+}
+
+.icon-link {
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Social Media Hover Effects */
+.icon-link:hover {
+    transform: scale(1.2);
+    color: #ff6464;
+    font-size: 29px;
+}
+
+/* Links Section */
+.links {
+    margin-top: 20px;
+}
+
+/* Social Media Links */
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect: Social Media Links */
+.link:hover {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Social Media Icons Inside Links */
+.link img.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect: Social Media Icons */
+.link img.icon:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+.footer {
+    color: inherit;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 18px;
+    }
+    
+    .profile-img {
+        width: 95px;
+        height: 95px;
+    }
+    
+    .link {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .icon-link {
+        font-size: 20px;
+        margin: 0 8px;
+    }
+
+    .icon-link:hover {
+        font-size: 25px;
+    }
+}
+
+/* Ensure Footer Stays at the Bottom */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer-icons {
+    margin-top: 10px;
+}
+
+.footer-icons .icon-link {
+    color: inherit;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.footer-icons .icon-link:hover {
+    color: #007bff;
+}
+
+/* Responsive White Box */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        max-width: 350px;
+        padding: 20px;
+    }
+}
