@@ -202,3 +202,24 @@ html, body {
         padding: 20px;
     }
 }
+.link {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.link:hover {
+    transform: scale(1.05);
+}
+
+.link:nth-child(1) { color: #333333; } /* GitHub */
+.link:nth-child(2) { color: #0A66C2; } /* LinkedIn */
+.link:nth-child(3) { color: #FFA116; } /* LeetCode */
+.link:nth-child(4) { color: #ef1111; } /* YouTube */
+.link:nth-child(5) { color: #E1306C; } /* Instagram */
+.link:nth-child(6) { color: #921196; } /* Topmate */
