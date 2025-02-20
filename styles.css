@@ -216,7 +216,6 @@ html, body {
 .link:hover {
     transform: scale(1.05);
 }
-
 .link:nth-child(1) { color: #333333; } /* GitHub */
 .link:nth-child(2) { color: #0A66C2; } /* LinkedIn */
 .link:nth-child(3) { color: #FFA116; } /* LeetCode */
